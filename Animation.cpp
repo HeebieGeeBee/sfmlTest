@@ -42,7 +42,7 @@ void Animation::Update(int row, float deltaTime, bool faceRight)
     }
     else
     {
-        uvRect.left = (currentImage.x * 1) * abs(uvRect.width);
+        uvRect.left = (currentImage.x + 1) * abs(uvRect.width);
         uvRect.width = -abs(uvRect.width);
     }
 }

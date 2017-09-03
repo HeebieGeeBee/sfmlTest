@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1504440550 source:/home/geeheeb/Desktop/sfmltest/main.cpp
+1504451111 source:/home/geeheeb/Desktop/sfmltest/main.cpp
 	<SFML/Graphics.hpp>
-
-1504449247 source:/home/geeheeb/Desktop/sfmltest/Animation.cpp
 	"Animation.h"
 
-1504448847 /home/geeheeb/Desktop/sfmltest/Animation.h
+1504451211 source:/home/geeheeb/Desktop/sfmltest/Animation.cpp
+	"Animation.h"
+
+1504449663 /home/geeheeb/Desktop/sfmltest/Animation.h
 	<SFML/Graphics.hpp>
 

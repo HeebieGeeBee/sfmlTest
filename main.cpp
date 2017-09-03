@@ -20,7 +20,7 @@ int main()
     playerTexture.loadFromFile("spritesheet_caveman.png");
     player.setTexture(&playerTexture);
 
-    Animation animation(&playerTexture, sf::Vector2u(4,4), 0.3f);
+    Animation animation(&playerTexture, sf::Vector2u(4,4), 1.3f);
 
     float deltaTime = 0.0f;
     sf::Clock clock;
@@ -30,7 +30,7 @@ int main()
     textureSize.x /= 4;
     textureSize.y /= 4;
 
-    player.setTextureRect(sf::IntRect(textureSize.x*3, 0, textureSize.x, textureSize.y));
+    player.setTextureRect(sf::IntRect(0, 0, textureSize.x, textureSize.y));
 
 
 	// Start the game loop
