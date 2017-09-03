@@ -43,6 +43,9 @@
 		</Compiler>
 		<Unit filename="Animation.cpp" />
 		<Unit filename="Animation.h" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
+		<Unit filename="caveman-walk.png" />
 		<Unit filename="main.cpp" />
 		<Unit filename="spritesheet_caveman.png" />
 		<Extensions>
