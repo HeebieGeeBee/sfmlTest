@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics" />
@@ -27,6 +28,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -39,8 +41,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="cb.bmp" />
+		<Unit filename="Animation.cpp" />
+		<Unit filename="Animation.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="spritesheet_caveman.png" />
 		<Extensions>
 			<code_completion />
 			<debugger />
