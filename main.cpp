@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include "Animation.h"
 #include "Player.h"
+#include "Platform.h"
 
 static const float VIEW_HEIGHT = 512.0f;
 
@@ -20,6 +21,9 @@ int main()
 
 
     Player player(&playerTexture, sf::Vector2u(3,9), 0.1f, 100.0f);
+
+    Platform platform1(nullptr, sf::Vector2f(400.0f, 400.0f), sf::Vector2f(500.0f, 200.0f));
+    Platform platform2(nullptr, sf::Vector2f(400.0f, 400.0f), sf::Vector2f(500.0f, 0.0f));
 
     float deltaTime = 0.0f;
     sf::Clock clock;
@@ -45,15 +49,23 @@ int main()
 
 
         player.Update(deltaTime);
+
+        platform1.GetCollider().CheckCollision(player.GetCollider(), 0.0f);
+        platform2.GetCollider().CheckCollision(player.GetCollider(), 1.0f);
+
+
+
         view.setCenter(player.GetPosition());
 
 
         // Clear screen
-        app.clear(sf::Color::White);
+        app.clear(sf::Color::Blue);
         // Update the window
         app.setView(view);
 
         player.Draw(app);
+        platform1.Draw(app);
+        platform2.Draw(app);
 
         app.display();
     }

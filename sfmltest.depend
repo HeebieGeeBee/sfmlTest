@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1504472942 source:/home/geeheeb/Desktop/sfmltest/main.cpp
+1504529559 source:/home/geeheeb/Desktop/sfmltest/main.cpp
 	<SFML/Graphics.hpp>
 	"Animation.h"
 	"Player.h"
+	"Platform.h"
 
 1504461292 source:/home/geeheeb/Desktop/sfmltest/Animation.cpp
 	"Animation.h"
@@ -10,10 +11,25 @@
 1504449663 /home/geeheeb/Desktop/sfmltest/Animation.h
 	<SFML/Graphics.hpp>
 
-1504472942 /home/geeheeb/Desktop/sfmltest/Player.h
+1504514842 /home/geeheeb/Desktop/sfmltest/Player.h
 	<SFML/Graphics.hpp>
 	"Animation.h"
+	"Collider.h"
 
-1504473011 source:/home/geeheeb/Desktop/sfmltest/Player.cpp
+1504514944 source:/home/geeheeb/Desktop/sfmltest/Player.cpp
 	"Player.h"
+
+1504529138 source:/home/geeheeb/Desktop/sfmltest/Collider.cpp
+	"Collider.h"
+
+1504529374 /home/geeheeb/Desktop/sfmltest/Collider.h
+	<SFML/Graphics.hpp>
+
+1504515594 /home/geeheeb/Desktop/sfmltest/Platform.h
+	<SFML/Graphics.hpp>
+	"Collider.h"
+
+1504516011 source:/home/geeheeb/Desktop/sfmltest/Platform.cpp
+	"Platform.h"
+	<SFML/Graphics.hpp>
 
